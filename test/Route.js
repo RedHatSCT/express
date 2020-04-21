@@ -222,7 +222,8 @@ describe('Route', function(){
 
       route.dispatch(req, {}, function(err){
         should(err).be.ok()
-        err.message.should.equal('boom!');
+        //err.message.should.equal('boom!');
+        err.message.should.equal('boomer!');
         done();
       });
     });
